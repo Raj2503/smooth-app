@@ -43,7 +43,6 @@ class _SignUpPageState extends State<SignUpPage> {
     final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     final Size size = MediaQuery.of(context).size;
 
-    // TODO(monsieurtanuki): translations
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -181,9 +180,8 @@ class _SignUpPageState extends State<SignUpPage> {
               title: RichText(
                 text: TextSpan(
                   children: <InlineSpan>[
-                    // TODO(monsieurtanuki): refactor / translate
                     TextSpan(
-                      text: 'I agree to the Open Food Facts ',
+                      text: appLocalizations.signup_page_terms_of_use_line1,
                       style: TextStyle(color: theme.colorScheme.onBackground),
                     ),
                     TextSpan(
@@ -191,7 +189,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         color: Colors.blue,
                         decoration: TextDecoration.underline,
                       ),
-                      text: 'terms of use and contribution',
+                      text: appLocalizations.signup_page_terms_of_use_line2,
                       recognizer: TapGestureRecognizer()
                         ..onTap = () async {
                           final String url =
