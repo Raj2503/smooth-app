@@ -1033,5 +1033,13 @@
                 "type": "Object?"
             }
         }
+    },
+    "summary_card_button_add_basic_details": "Complete basic details",
+    "@summary_card_button_add_basic_details": {
+        "description": "Summary card - Button to add details about the product"
+    },
+    "category_picker_screen_title": "categories",
+    "@category_picker_screen_title": {
+        "description": "Categories picker screen title"
     }
 }
